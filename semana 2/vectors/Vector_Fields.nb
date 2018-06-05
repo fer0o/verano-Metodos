@@ -1,0 +1,1401 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     46762,       1393]
+NotebookOptionsPosition[     44809,       1332]
+NotebookOutlinePosition[     45260,       1349]
+CellTagsIndexPosition[     45217,       1346]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Curves", "Title",
+ CellChangeTimes->{{3.736026103829715*^9, 3.736026119206394*^9}, {
+  3.736094559511698*^9, 3.736094579779598*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["In plane", "Section",
+ CellChangeTimes->{{3.7360945508553653`*^9, 3.736094555592228*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     SuperscriptBox["t", "2"], ",", 
+     SuperscriptBox["t", "3"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.736026130780815*^9, 3.736026190246374*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"t", " ", 
+      RowBox[{"Cos", "[", "t", "]"}]}], ",", 
+     RowBox[{"t", " ", 
+      RowBox[{"Sin", "[", "t", "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", 
+     RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "\[Pi]"}], "-", "1"}], ",", 
+        RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], "\[Pi]"}], ",", "\[Pi]"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"Ticks", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Range", "[", 
+       RowBox[{
+        RowBox[{"-", "\[Pi]"}], ",", 
+        RowBox[{"2", "\[Pi]"}], ",", 
+        FractionBox["\[Pi]", "2"]}], "]"}], ",", 
+      RowBox[{"Range", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+        RowBox[{"3", 
+         FractionBox["\[Pi]", "2"]}], ",", 
+        FractionBox["\[Pi]", "2"]}], "]"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7360262294849772`*^9, 3.736026400946263*^9}, {
+  3.7360264359301777`*^9, 3.7360264954705477`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"t", "-", 
+      RowBox[{"Sin", "[", "t", "]"}]}], ",", 
+     RowBox[{"1", "-", 
+      RowBox[{"Cos", "[", "t", "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", 
+     RowBox[{"4", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", 
+        RowBox[{"4", "\[Pi]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"-", "\[Pi]"}], "2"], ",", "\[Pi]"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"Ticks", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Range", "[", 
+       RowBox[{
+        RowBox[{"-", "\[Pi]"}], ",", 
+        RowBox[{"4", "\[Pi]"}], ",", 
+        FractionBox["\[Pi]", "2"]}], "]"}], ",", 
+      RowBox[{"Range", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+        RowBox[{"3", 
+         FractionBox["\[Pi]", "2"]}], ",", 
+        FractionBox["\[Pi]", "2"]}], "]"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.736026569838291*^9, 3.736026577001972*^9}, {
+  3.7360268182849016`*^9, 3.736026895852491*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Sin", "[", "t", "]"}], 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"Cos", "[", "t", "]"}]], "-", 
+        RowBox[{"2", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"4", "t"}], "]"}]}], "+", 
+        SuperscriptBox[
+         RowBox[{"Sin", "[", 
+          FractionBox["t", "12"], "]"}], "5"]}], ")"}]}], ",", 
+     RowBox[{
+      RowBox[{"Cos", "[", "t", "]"}], 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"Cos", "[", "t", "]"}]], "-", 
+        RowBox[{"2", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"4", "t"}], "]"}]}], "+", 
+        SuperscriptBox[
+         RowBox[{"Sin", "[", 
+          FractionBox["t", "12"], "]"}], "5"]}], ")"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", 
+     RowBox[{"7", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+        RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "\[Pi]"}], ",", 
+        RowBox[{"2", "\[Pi]"}]}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"Ticks", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Range", "[", 
+       RowBox[{
+        RowBox[{"-", "\[Pi]"}], ",", 
+        RowBox[{"2", "\[Pi]"}], ",", 
+        FractionBox["\[Pi]", "2"]}], "]"}], ",", 
+      RowBox[{"Range", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+        RowBox[{"3", 
+         FractionBox["\[Pi]", "2"]}], ",", 
+        FractionBox["\[Pi]", "2"]}], "]"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.736026941489483*^9, 3.7360270589109464`*^9}, {
+  3.736027109930995*^9, 3.736027181956744*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"1.5", 
+       RowBox[{"Cos", "[", "t", "]"}]}], "-", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"2", "t"}], "]"}]}], ",", 
+     RowBox[{
+      RowBox[{"1.5", 
+       RowBox[{"Sin", "[", "t", "]"}]}], "-", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"2", "t"}], "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", 
+     RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "\[Pi]"}], ",", "\[Pi]"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "\[Pi]"}], ",", "\[Pi]"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"Ticks", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Range", "[", 
+       RowBox[{
+        RowBox[{"-", "\[Pi]"}], ",", 
+        RowBox[{"2", "\[Pi]"}], ",", 
+        FractionBox["\[Pi]", "2"]}], "]"}], ",", 
+      RowBox[{"Range", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+        RowBox[{"3", 
+         FractionBox["\[Pi]", "2"]}], ",", 
+        FractionBox["\[Pi]", "2"]}], "]"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7360272691787744`*^9, 3.7360273325980387`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"1.5", 
+       RowBox[{"Cos", "[", "t", "]"}]}], "-", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"15", "t"}], "]"}]}], ",", 
+     RowBox[{
+      RowBox[{"1.5", 
+       RowBox[{"Sin", "[", "t", "]"}]}], "-", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"15", "t"}], "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", 
+     RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "\[Pi]"}], ",", "\[Pi]"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "\[Pi]"}], ",", "\[Pi]"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"Ticks", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Range", "[", 
+       RowBox[{
+        RowBox[{"-", "\[Pi]"}], ",", "\[Pi]", ",", 
+        FractionBox["\[Pi]", "2"]}], "]"}], ",", 
+      RowBox[{"Range", "[", 
+       RowBox[{
+        RowBox[{"-", "\[Pi]"}], ",", "\[Pi]", ",", 
+        FractionBox["\[Pi]", "2"]}], "]"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7360273521924186`*^9, 3.736027388739597*^9}, {
+  3.736088313124498*^9, 3.7360883244575915`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ParametricPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"1.5", 
+         RowBox[{"Cos", "[", "t", "]"}]}], "-", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"p", " ", "t"}], "]"}]}], ",", 
+       RowBox[{
+        RowBox[{"1.5", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "-", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"p", " ", "t"}], "]"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", 
+       RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "\[Pi]"}], ",", "\[Pi]"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "\[Pi]"}], ",", "\[Pi]"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"Ticks", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Range", "[", 
+         RowBox[{
+          RowBox[{"-", "\[Pi]"}], ",", "\[Pi]", ",", 
+          FractionBox["\[Pi]", "2"]}], "]"}], ",", 
+        RowBox[{"Range", "[", 
+         RowBox[{
+          RowBox[{"-", "\[Pi]"}], ",", "\[Pi]", ",", 
+          FractionBox["\[Pi]", "2"]}], "]"}]}], "}"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"p", ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "5", ",", "10", ",", "20"}], "}"}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.736027427029954*^9, 3.736027473028832*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ParametricPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"1.5", 
+         RowBox[{"Cos", "[", "t", "]"}]}], "-", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"5", " ", "t"}], "]"}]}], ",", 
+       RowBox[{
+        RowBox[{"1.5", 
+         RowBox[{"Sin", "[", "t", "]"}]}], "-", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"p", " ", "t"}], "]"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", 
+       RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "\[Pi]"}], ",", "\[Pi]"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "\[Pi]"}], ",", "\[Pi]"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"Ticks", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Range", "[", 
+         RowBox[{
+          RowBox[{"-", "\[Pi]"}], ",", "\[Pi]", ",", 
+          FractionBox["\[Pi]", "2"]}], "]"}], ",", 
+        RowBox[{"Range", "[", 
+         RowBox[{
+          RowBox[{"-", "\[Pi]"}], ",", "\[Pi]", ",", 
+          FractionBox["\[Pi]", "2"]}], "]"}]}], "}"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"p", ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "2", ",", "4", ",", "6", ",", "7", ",", "8", ",", "9", ",", "13"}], 
+      "}"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7360275126723275`*^9, 3.7360275622863026`*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["In space", "Section",
+ CellChangeTimes->{{3.736094569442279*^9, 3.736094570712262*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[Pi]", " ", 
+      RowBox[{"Cos", "[", "t", "]"}]}], ",", 
+     RowBox[{"\[Pi]", " ", 
+      RowBox[{"Sin", "[", "t", "]"}]}], ",", "t"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", 
+     RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+   RowBox[{"AxesOrigin", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.736084028489298*^9, 3.7360840562469687`*^9}, {
+  3.7360840974428697`*^9, 3.7360842421113133`*^9}, {3.736084281442762*^9, 
+  3.7360842835177574`*^9}, {3.736084410811969*^9, 3.736084425753094*^9}, {
+  3.7360844571118126`*^9, 3.7360844593210325`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", " ", 
+    RowBox[{
+     RowBox[{"Cos", "[", "t", "]"}], ",", " ", 
+     RowBox[{"Sin", "[", "t", "]"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", 
+     RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+   RowBox[{"AxesOrigin", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.736084467291909*^9, 3.7360845220961313`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Cos", "[", "t", "]"}], ",", 
+     RowBox[{"Sin", "[", "t", "]"}], ",", 
+     RowBox[{"-", 
+      RowBox[{"Sin", "[", "t", "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", 
+     RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+   RowBox[{"AxesOrigin", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.736084568902505*^9, 3.7360846942180777`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Sin", "[", "t", "]"}], 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"Cos", "[", "t", "]"}]], "-", 
+        RowBox[{"2", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"4", "t"}], "]"}]}], "+", 
+        SuperscriptBox[
+         RowBox[{"Sin", "[", 
+          FractionBox["t", "12"], "]"}], "5"]}], ")"}]}], ",", 
+     RowBox[{
+      RowBox[{"Cos", "[", "t", "]"}], 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"Cos", "[", "t", "]"}]], "-", 
+        RowBox[{"2", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"4", "t"}], "]"}]}], "+", 
+        SuperscriptBox[
+         RowBox[{"Sin", "[", 
+          FractionBox["t", "12"], "]"}], "5"]}], ")"}]}], ",", 
+     RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", 
+     RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+        RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "\[Pi]"}], ",", 
+        RowBox[{"2", "\[Pi]"}]}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"Ticks", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Range", "[", 
+       RowBox[{
+        RowBox[{"-", "\[Pi]"}], ",", 
+        RowBox[{"2", "\[Pi]"}], ",", 
+        FractionBox["\[Pi]", "2"]}], "]"}], ",", 
+      RowBox[{"Range", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+        RowBox[{"3", 
+         FractionBox["\[Pi]", "2"]}], ",", 
+        FractionBox["\[Pi]", "2"]}], "]"}]}], "}"}]}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+   RowBox[{"AxesOrigin", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.7360846512776346`*^9, {3.7360847282770896`*^9, 3.736084832212183*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", " ", 
+    RowBox[{
+     RowBox[{"t", " ", 
+      RowBox[{"Cos", "[", "t", "]"}]}], ",", " ", 
+     RowBox[{"t", " ", 
+      RowBox[{"Sin", "[", "t", "]"}]}], ",", "t"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", 
+     RowBox[{"7", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+   RowBox[{"AxesOrigin", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.73608495444561*^9, 3.7360849667891455`*^9}}]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Vector Fields", "Title",
+ CellChangeTimes->{{3.585934932757583*^9, 3.585934937060191*^9}, {
+  3.5859374745244293`*^9, 3.5859374780188956`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["2D", "Section",
+ CellChangeTimes->{{3.5859349456732225`*^9, 3.5859349460082655`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"VectorStyle", "\[Rule]", 
+    RowBox[{"Arrowheads", "[", ".01", "]"}]}], ",", 
+   RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "Fine"}], ",", 
+   RowBox[{"StreamStyle", "\[Rule]", "Red"}], ",", 
+   RowBox[{"StreamPoints", "\[Rule]", "80"}], ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5859350995037484`*^9, 3.585935120648432*^9}, {
+   3.585935188687035*^9, 3.585935193276651*^9}, {3.585935821949452*^9, 
+   3.58593586007229*^9}, {3.58593640798794*^9, 3.5859364086899495`*^9}, {
+   3.585936501339316*^9, 3.585936503757343*^9}, {3.5867138408522224`*^9, 
+   3.586713864132707*^9}, {3.586725248113966*^9, 3.586725272652953*^9}, {
+   3.586729258888636*^9, 3.586729263578972*^9}, 3.7360854303689413`*^9}],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "x"}], ",", 
+     RowBox[{"-", "y"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"VectorStyle", "\[Rule]", 
+    RowBox[{"Arrowheads", "[", ".01", "]"}]}], ",", 
+   RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "Fine"}], ",", 
+   RowBox[{"StreamStyle", "\[Rule]", "Red"}], ",", 
+   RowBox[{"StreamPoints", "\[Rule]", "80"}], ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5859360006510267`*^9, 3.5859360025073724`*^9}, {
+   3.5859364249765196`*^9, 3.585936425428999*^9}, {3.5859364899512415`*^9, 
+   3.58593649226003*^9}, {3.586713872037441*^9, 3.586713881559346*^9}, {
+   3.586729283000633*^9, 3.586729285076764*^9}, 3.736085428477787*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a1", "=", 
+   RowBox[{"VectorPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["x", 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["x", "2"], "+", 
+          SuperscriptBox["y", "2"]}]]], ",", 
+       FractionBox["y", 
+        SqrtBox[
+         RowBox[{
+          SuperscriptBox["x", "2"], "+", 
+          SuperscriptBox["y", "2"]}]]]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", "3"}], "}"}], ",", 
+     RowBox[{"VectorStyle", "\[Rule]", 
+      RowBox[{"Arrowheads", "[", ".01", "]"}]}], ",", 
+     RowBox[{"VectorScale", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{".03", ",", ".03"}], "}"}]}], ",", 
+     RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+     RowBox[{"VectorPoints", "\[Rule]", "Fine"}], ",", 
+     RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a2", "=", 
+   RowBox[{"ParametricPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"t", ",", 
+       SuperscriptBox["t", "2"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "1.75"}], "}"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Red"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a3", "=", 
+   RowBox[{"ParametricPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "t", "]"}], "-", "1"}], ",", 
+       RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "\[Pi]"}], "}"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Red"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{"a1", ",", "a2", ",", "a3", ",", 
+   RowBox[{"AspectRatio", "\[Rule]", 
+    RowBox[{"3", "/", "4"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.5859351467547464`*^9, 3.5859351687445374`*^9}, {
+   3.5859352029928846`*^9, 3.5859352069903917`*^9}, {3.5859358764205923`*^9, 
+   3.585935876794636*^9}, {3.585936018013936*^9, 3.5859360410086527`*^9}, {
+   3.5859364373630505`*^9, 3.5859364818391857`*^9}, {3.7360251773476577`*^9, 
+   3.736025493279807*^9}, 3.7360255389675493`*^9, {3.7360255751802216`*^9, 
+   3.7360256318271065`*^9}, {3.7360256870026817`*^9, 3.736025804858762*^9}, {
+   3.73608542101225*^9, 3.7360854248461905`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"b1", "=", 
+   RowBox[{"VectorPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "y"}], ",", "x"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", "3"}], "}"}], ",", 
+     RowBox[{"VectorStyle", "\[Rule]", 
+      RowBox[{"Arrowheads", "[", ".01", "]"}]}], ",", 
+     RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+     RowBox[{"VectorPoints", "\[Rule]", "Fine"}], ",", 
+     RowBox[{"StreamPoints", "\[Rule]", "60"}], ",", 
+     RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b2", "=", 
+   RowBox[{"ParametricPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"t", ",", "t"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Black"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b3", "=", 
+   RowBox[{"ParametricPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        SqrtBox["2"], 
+        RowBox[{"Sin", "[", "t", "]"}]}], ",", 
+       RowBox[{
+        SqrtBox["2"], 
+        RowBox[{"Cos", "[", "t", "]"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", 
+       FractionBox["\[Pi]", "4"], ",", 
+       FractionBox["\[Pi]", "2"]}], "}"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Black"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b4", "=", 
+   RowBox[{"ParametricPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"t", "+", 
+        SqrtBox["2"]}], ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", 
+       SqrtBox["2"]}], "}"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Black"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b5", "=", 
+   RowBox[{"ParametricPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"t", ",", 
+       RowBox[{
+        RowBox[{
+         FractionBox[
+          RowBox[{"-", "3"}], "8"], 
+         SuperscriptBox["t", "2"]}], "+", "3"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", 
+       RowBox[{"2", 
+        SqrtBox["2"]}]}], "}"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Black"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b6", "=", 
+   RowBox[{"ParametricPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "t"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "3", ",", "0"}], "}"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", "Black"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{"b1", ",", "b2", ",", "b3", ",", "b4", ",", "b5", ",", "b6", ",", 
+   RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.585935245178239*^9, 3.585935254078369*^9}, {
+   3.5859358911484585`*^9, 3.5859358915765142`*^9}, {3.5859365139755325`*^9, 
+   3.5859365387173843`*^9}, {3.5867139050120316`*^9, 
+   3.5867139103877325`*^9}, {3.5867253771177983`*^9, 3.586725379933403*^9}, {
+   3.736085315070859*^9, 3.736085403224121*^9}, {3.736085465622176*^9, 
+   3.7360854797592125`*^9}, {3.736086177552308*^9, 3.736086245643446*^9}, {
+   3.736086282758151*^9, 3.736086500295551*^9}, {3.736086677231477*^9, 
+   3.7360867254205275`*^9}, 3.7360867615764656`*^9, {3.73608679410853*^9, 
+   3.7360868836057987`*^9}, {3.7360869375053234`*^9, 3.736086963059268*^9}, {
+   3.7360870324104757`*^9, 3.7360870629710016`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       RowBox[{"x", "-", "1"}], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"x", "-", "1"}], ")"}], "2"], "+", 
+          SuperscriptBox["y", "2"]}], ")"}], 
+        FractionBox["3", "2"]]], "+", 
+      FractionBox[
+       RowBox[{"x", "+", "1"}], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"x", "+", "1"}], ")"}], "2"], "+", 
+          SuperscriptBox["y", "2"]}], ")"}], 
+        FractionBox["3", "2"]]]}], ",", 
+     RowBox[{
+      FractionBox["y", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"x", "-", "1"}], ")"}], "2"], "+", 
+          SuperscriptBox["y", "2"]}], ")"}], 
+        FractionBox["3", "2"]]], "+", 
+      FractionBox["y", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"x", "+", "1"}], ")"}], "2"], "+", 
+          SuperscriptBox["y", "2"]}], ")"}], 
+        FractionBox["3", "2"]]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"VectorScale", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{".02", ",", ".02"}], "}"}]}], ",", 
+   RowBox[{"VectorStyle", "\[Rule]", 
+    RowBox[{"Arrowheads", "[", ".02", "]"}]}], ",", 
+   RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "None"}], ",", 
+   RowBox[{"StreamStyle", "\[Rule]", "Red"}], ",", 
+   RowBox[{"StreamPoints", "\[Rule]", "80"}], ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5859362638101044`*^9, 3.5859362670550504`*^9}, {
+   3.5859363055728607`*^9, 3.5859363232478476`*^9}, {3.585936377817263*^9, 
+   3.5859363783320274`*^9}, {3.5867139271877556`*^9, 3.586713972430814*^9}, 
+   3.736087225339247*^9}],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       RowBox[{"x", "-", "1"}], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"x", "-", "1"}], ")"}], "2"], "+", 
+          SuperscriptBox["y", "2"]}], ")"}], 
+        FractionBox["3", "2"]]], "-", 
+      FractionBox[
+       RowBox[{"x", "+", "1"}], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"x", "+", "1"}], ")"}], "2"], "+", 
+          SuperscriptBox["y", "2"]}], ")"}], 
+        FractionBox["3", "2"]]]}], ",", 
+     RowBox[{
+      FractionBox["y", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"x", "-", "1"}], ")"}], "2"], "+", 
+          SuperscriptBox["y", "2"]}], ")"}], 
+        FractionBox["3", "2"]]], "-", 
+      FractionBox["y", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"x", "+", "1"}], ")"}], "2"], "+", 
+          SuperscriptBox["y", "2"]}], ")"}], 
+        FractionBox["3", "2"]]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"VectorScale", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{".02", ",", ".02"}], "}"}]}], ",", 
+   RowBox[{"VectorStyle", "\[Rule]", 
+    RowBox[{"Arrowheads", "[", ".02", "]"}]}], ",", 
+   RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "None"}], ",", 
+   RowBox[{"StreamStyle", "\[Rule]", "Red"}], ",", 
+   RowBox[{"StreamPoints", "\[Rule]", "80"}], ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5859353220029573`*^9, 3.5859353472031913`*^9}, {
+  3.5859354047044907`*^9, 3.585935507082485*^9}, {3.5859356665857315`*^9, 
+  3.585935765939345*^9}, {3.5859359072405014`*^9, 3.5859359076265507`*^9}, {
+  3.585936073706523*^9, 3.5859361487120843`*^9}, {3.585936180364848*^9, 
+  3.585936185325795*^9}, {3.5859362200516663`*^9, 3.5859362218924856`*^9}, {
+  3.5859363619830546`*^9, 3.5859363897201223`*^9}, {3.586713982895646*^9, 
+  3.5867140013854523`*^9}, {3.736087235776745*^9, 3.736087239551459*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"VectorPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "a"}], 
+         FractionBox[
+          RowBox[{"x", "-", "1"}], 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox[
+              RowBox[{"(", 
+               RowBox[{"x", "-", "1"}], ")"}], "2"], "+", 
+             SuperscriptBox["y", "2"]}], ")"}], 
+           FractionBox["3", "2"]]]}], "+", 
+        RowBox[{"b", 
+         FractionBox[
+          RowBox[{"x", "+", "1"}], 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox[
+              RowBox[{"(", 
+               RowBox[{"x", "+", "1"}], ")"}], "2"], "+", 
+             SuperscriptBox["y", "2"]}], ")"}], 
+           FractionBox["3", "2"]]]}]}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "a"}], 
+         FractionBox["y", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox[
+              RowBox[{"(", 
+               RowBox[{"x", "-", "1"}], ")"}], "2"], "+", 
+             SuperscriptBox["y", "2"]}], ")"}], 
+           FractionBox["3", "2"]]]}], "+", 
+        RowBox[{"b", 
+         FractionBox["y", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox[
+              RowBox[{"(", 
+               RowBox[{"x", "+", "1"}], ")"}], "2"], "+", 
+             SuperscriptBox["y", "2"]}], ")"}], 
+           FractionBox["3", "2"]]]}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "i"}], ",", "i"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "i"}], ",", "i"}], "}"}], ",", 
+     RowBox[{"VectorScale", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{".02", ",", ".02"}], "}"}]}], ",", 
+     RowBox[{"VectorStyle", "\[Rule]", 
+      RowBox[{"Arrowheads", "[", ".02", "]"}]}], ",", 
+     RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+     RowBox[{"VectorPoints", "\[Rule]", "None"}], ",", 
+     RowBox[{"StreamStyle", "\[Rule]", "Red"}], ",", 
+     RowBox[{"StreamPoints", "\[Rule]", "100"}], ",", 
+     RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "1", ",", "\"\<Carga -\>\""}], "}"}], ",", 
+     RowBox[{"Range", "[", "5", "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b", ",", "1", ",", "\"\<Carga +\>\""}], "}"}], ",", 
+     RowBox[{"Range", "[", "5", "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"i", ",", "3", ",", "\"\<Intervalo\>\""}], "}"}], ",", 
+     RowBox[{"Range", "[", "10", "]"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.586714088985103*^9, 3.5867141128045216`*^9}, {
+  3.5867141553732576`*^9, 3.586714159586648*^9}, {3.5867142005121136`*^9, 
+  3.5867144744913015`*^9}, {3.586714529079901*^9, 3.5867146021884356`*^9}, {
+  3.586714632313403*^9, 3.586714666249958*^9}, {3.586714697218398*^9, 
+  3.586714700352637*^9}, {3.7360872485214825`*^9, 3.736087253669897*^9}}],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot", "[", 
+  RowBox[{
+   RowBox[{"Evaluate", "[", 
+    RowBox[{"D", "[", 
+     RowBox[{
+      RowBox[{"x", " ", "y"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "y"}], "}"}], "}"}]}], "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"VectorStyle", "\[Rule]", 
+    RowBox[{"Arrowheads", "[", ".01", "]"}]}], ",", 
+   RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "Fine"}], ",", 
+   RowBox[{"StreamStyle", "\[Rule]", "Red"}], ",", 
+   RowBox[{"StreamPoints", "\[Rule]", "80"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5843046261205025`*^9, 3.5843046292589455`*^9}, {
+  3.5867138110358696`*^9, 3.5867138196640444`*^9}, {3.6437457480186796`*^9, 
+  3.643745748736281*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"ContourPlot", "[", 
+    RowBox[{
+     RowBox[{"x", " ", "y"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+     RowBox[{"Contours", "\[Rule]", "20"}]}], "]"}], ",", 
+   RowBox[{"VectorPlot", "[", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", 
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"x", " ", "y"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "y"}], "}"}], "}"}]}], "]"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+     RowBox[{"VectorStyle", "\[Rule]", 
+      RowBox[{"Arrowheads", "[", ".01", "]"}]}], ",", 
+     RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+     RowBox[{"VectorPoints", "\[Rule]", "Fine"}], ",", 
+     RowBox[{"StreamStyle", "\[Rule]", "Red"}], ",", 
+     RowBox[{"StreamPoints", "\[Rule]", "80"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.584014608352682*^9, 3.5840146808622475`*^9}, {
+  3.5843046558072376`*^9, 3.5843046723753405`*^9}, {3.6437457651339097`*^9, 
+  3.64374576557071*^9}}],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Cos", "[", "x", "]"}], ",", 
+     RowBox[{"1", "-", 
+      RowBox[{"Sin", "[", "y", "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{
+      RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+     RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{
+      RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+     RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"VectorScale", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{".03", ",", ".03"}], "}"}]}], ",", 
+   RowBox[{"VectorStyle", "\[Rule]", 
+    RowBox[{"Arrowheads", "[", ".015", "]"}]}], ",", 
+   RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+   RowBox[{"StreamStyle", "\[Rule]", "Red"}], ",", 
+   RowBox[{"StreamPoints", "\[Rule]", "220"}], ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.736094616942596*^9, 3.7360947273495226`*^9}, {
+  3.736094757993106*^9, 3.736094831983074*^9}}],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot", "[", 
+  RowBox[{
+   RowBox[{"Evaluate", "[", 
+    RowBox[{"D", "[", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["x", "2"], "y", " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"x", " ", 
+         SuperscriptBox["y", "2"]}], "]"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "y"}], "}"}], "}"}]}], "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"VectorStyle", "\[Rule]", 
+    RowBox[{"Arrowheads", "[", ".01", "]"}]}], ",", 
+   RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "Fine"}], ",", 
+   RowBox[{"StreamStyle", "\[Rule]", "Red"}], ",", 
+   RowBox[{"StreamPoints", "\[Rule]", "280"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.736094934789744*^9, 3.7360950575610676`*^9}, 
+   3.736095089123907*^9}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["3D", "Section",
+ CellChangeTimes->{{3.585936711660817*^9, 3.5859367122848244`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["x", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["y", "2"], "+", 
+        SuperscriptBox["z", "2"]}]]], ",", 
+     FractionBox["y", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["y", "2"], "+", 
+        SuperscriptBox["z", "2"]}]]], ",", 
+     FractionBox["z", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["y", "2"], "+", 
+        SuperscriptBox["z", "2"]}]]]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "6"}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+   RowBox[{"VectorStyle", "\[Rule]", 
+    RowBox[{"Arrowheads", "[", "0.02", "]"}]}], ",", 
+   RowBox[{"Axes", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "Fine"}], ",", 
+   RowBox[{"VectorScale", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{".1", ",", ".1"}], "}"}]}], ",", 
+   RowBox[{"AxesOrigin", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], ",", 
+   RowBox[{"PerformanceGoal", "\[Rule]", "\"\<Quality\>\""}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.585934398925579*^9, 3.585934468714438*^9}, {
+  3.585934520001937*^9, 3.585934565391708*^9}, {3.5859346226489663`*^9, 
+  3.5859346237361126`*^9}, {3.5867150317874546`*^9, 3.5867150607801456`*^9}, {
+  3.5867169912421503`*^9, 3.586717070737547*^9}, {3.5867258959911957`*^9, 
+  3.586725896905014*^9}, {3.5867293117428455`*^9, 3.586729312501355*^9}, {
+  3.6437458268400173`*^9, 3.643745858336873*^9}, {3.643746034764982*^9, 
+  3.643746035170583*^9}, {3.7360876337114353`*^9, 3.7360876339367266`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"-", "y"}], 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["y", "2"]}]]], ",", 
+     FractionBox["x", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["y", "2"]}]]], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "6"}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+   RowBox[{"VectorStyle", "\[Rule]", 
+    RowBox[{"Arrowheads", "[", "0.02", "]"}]}], ",", 
+   RowBox[{"Axes", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"AxesOrigin", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], ",", 
+   RowBox[{"VectorScale", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{".1", ",", ".1"}], "}"}]}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "Fine"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], ",", 
+   RowBox[{"PerformanceGoal", "\[Rule]", "\"\<Quality\>\""}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.5867166941169767`*^9, 3.586716728698817*^9}, {
+  3.5867167732464957`*^9, 3.586716778880664*^9}, {3.5867168350773354`*^9, 
+  3.5867168703576374`*^9}, {3.586716935068325*^9, 3.5867169511854067`*^9}, {
+  3.5867171026199455`*^9, 3.5867171320035057`*^9}, {3.6437460217525597`*^9, 
+  3.6437460222225604`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["x", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["y", "2"], "+", 
+        SuperscriptBox["z", "2"]}]]], ",", 
+     FractionBox["y", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["y", "2"], "+", 
+        SuperscriptBox["z", "2"]}]]], ",", 
+     FractionBox["z", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["y", "2"], "+", 
+        SuperscriptBox["z", "2"]}]]]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "6"}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+   RowBox[{"VectorStyle", "\[Rule]", 
+    RowBox[{"Arrowheads", "[", "0.02", "]"}]}], ",", 
+   RowBox[{"Axes", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "Fine"}], ",", 
+   RowBox[{"VectorScale", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{".1", ",", ".1"}], "}"}]}], ",", 
+   RowBox[{"AxesOrigin", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], ",", 
+   RowBox[{"PerformanceGoal", "\[Rule]", "\"\<Quality\>\""}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.5840147435747213`*^9, 3.584014759767874*^9}, {
+   3.5840157646676564`*^9, 3.5840158677848625`*^9}, {3.5843047027882013`*^9, 
+   3.584304712237419*^9}, {3.5859342468122845`*^9, 3.5859343070489063`*^9}, 
+   3.6437459392974153`*^9, {3.64374598179589*^9, 3.6437459825758905`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", "x"], ",", 
+     RowBox[{"x", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"x", " ", "y"}]]}], ",", 
+     RowBox[{"x", " ", "y", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"x", " ", "y", " ", "z"}]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "10"}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+   RowBox[{"VectorStyle", "\[Rule]", 
+    RowBox[{"Arrowheads", "[", "0.015", "]"}]}], ",", 
+   RowBox[{"Axes", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "Fine"}], ",", 
+   RowBox[{"VectorScale", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{".1", ",", ".1"}], "}"}]}], ",", 
+   RowBox[{"AxesOrigin", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], ",", 
+   RowBox[{"PerformanceGoal", "\[Rule]", "\"\<Quality\>\""}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7360880209200974`*^9, 3.7360882146772738`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot3D", "[", 
+  RowBox[{
+   RowBox[{"Evaluate", "[", 
+    RowBox[{"D", "[", 
+     RowBox[{
+      RowBox[{"x", " ", "y", " ", "z"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "y", ",", "z"}], "}"}], "}"}]}], "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"VectorStyle", "\[Rule]", 
+    RowBox[{"Arrowheads", "[", ".01", "]"}]}], ",", 
+   RowBox[{"VectorPoints", "\[Rule]", "Fine"}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+   RowBox[{"AxesOrigin", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7360888771446476`*^9, 3.73608895322709*^9}}]
+}, Closed]]
+}, Closed]]
+},
+WindowSize->{1904, 997},
+WindowMargins->{{-1928, Automatic}, {Automatic, 0}},
+Magnification:>1.8 Inherited,
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->FrontEnd`FileName[{"Report"}, "StandardReport.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 138, 2, 179, "Title"],
+Cell[CellGroupData[{
+Cell[742, 28, 95, 1, 230, "Section"],
+Cell[840, 31, 575, 18, 135, "Input"],
+Cell[1418, 51, 1286, 40, 270, "Input"],
+Cell[2707, 93, 1227, 38, 174, "Input"],
+Cell[3937, 133, 1926, 60, 298, "Input"],
+Cell[5866, 195, 1320, 42, 270, "Input"],
+Cell[7189, 239, 1270, 39, 270, "Input"],
+Cell[8462, 280, 1485, 45, 270, "Input"],
+Cell[9950, 327, 1529, 46, 270, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[11516, 378, 93, 1, 180, "Section"],
+Cell[11612, 381, 792, 19, 126, "Input"],
+Cell[12407, 402, 537, 14, 126, "Input"],
+Cell[12947, 418, 582, 16, 126, "Input"],
+Cell[13532, 436, 2107, 65, 298, "Input"],
+Cell[15642, 503, 590, 16, 126, "Input"]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[16281, 525, 149, 2, 129, "Title"],
+Cell[CellGroupData[{
+Cell[16455, 531, 91, 1, 128, "Section"],
+Cell[16549, 534, 1084, 23, 189, "Input"],
+Cell[17636, 559, 981, 23, 189, "Input"],
+Cell[18620, 584, 2409, 65, 522, "Input"],
+Cell[21032, 651, 3531, 99, 709, "Input"],
+Cell[24566, 752, 2187, 64, 387, "Input"],
+Cell[26756, 818, 2459, 67, 387, "Input"],
+Cell[29218, 887, 3173, 88, 387, "Input"],
+Cell[32394, 977, 930, 24, 189, "Input"],
+Cell[33327, 1003, 1344, 36, 250, "Input"],
+Cell[34674, 1041, 1013, 28, 189, "Input"],
+Cell[35690, 1071, 980, 27, 205, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[36707, 1103, 89, 1, 100, "Section"],
+Cell[36799, 1106, 2009, 52, 214, "Input"],
+Cell[38811, 1160, 1700, 46, 214, "Input"],
+Cell[40514, 1208, 1899, 52, 214, "Input"],
+Cell[42416, 1262, 1421, 38, 250, "Input"],
+Cell[43840, 1302, 941, 26, 189, "Input"]
+}, Closed]]
+}, Closed]]
+}
+]
+*)
+
